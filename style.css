@@ -1,0 +1,742 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  margin: 0px 150px;
+  overflow-x: hidden;
+}
+
+/* Header Section Design */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.header_sec1 {
+  width: 20%;
+  text-align: center;
+  font-size: 27px;
+  color: black;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.header_sec1 img {
+  width: 85%;
+  vertical-align: middle;
+}
+
+.header_sec2 {
+  display: flex;
+  width: 50%;
+  padding-top: 8px;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.header_sec2 p {
+  width: 15%;
+  padding-top: 10px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.header_sec3 {
+  width: 18%;
+  padding: 10px;
+  display: flex;
+  padding-top: 10px;
+  gap: 30px;
+}
+
+.header_sec3 a {
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+
+.header_sec3 button {
+  font-weight: 400;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header_sec3 button:hover {
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  color: #000;
+}
+
+/* Header-middle design */
+.header_middle h2 {
+  font-size: 54px;
+  color: black;
+  margin-top: 40px;
+  text-align: center;
+
+}
+/* Search design */
+.search-info {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+  gap: 10px; 
+  margin: 30px;
+  width: 70%;
+  padding-left: 150px;
+  cursor: pointer;
+}
+.search-info p {
+  display: flex;
+  align-items: center; 
+  font-size: 18px; 
+  text-underline-offset: 11px;
+}
+.searchinfo__p{
+  text-decoration: underline;
+}
+.search-info i {
+  margin-right: 8px;
+}
+.search-info p:hover{
+  color: green;
+  text-decoration: underline;
+}
+/* Search form */
+.search__form {
+  background-color: white;
+  margin-left: 190px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  width: 66%;
+  max-width: 1100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  flex-basis: 75%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search{
+  padding-left: 30px;
+  font-size: 20px;
+
+}
+.search_input{
+  border:none;
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 5px;
+
+}
+.search_input:focus{
+  outline: none;
+}
+.search__form button{
+  background-color: #84E9BD;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border:none;
+  border-radius: 20px;
+}
+
+/* Trip-Builder Section */
+.tripbuilder_content {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+}
+
+/* Image Styling */
+.tripbuilder_section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Content */
+.content {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  max-width: 500px;
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+/* Content Side Heading */
+.content_side_heading {
+  display: flex;
+  align-items: center;
+
+}
+
+.content_side_heading p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.content_side_heading span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #000;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Headings and Button */
+.content h1 {
+  font-size: 50px;
+  line-height: 55px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.head {
+  font-size: 24px;
+  margin: 5px 0;
+  font-weight: 550;
+  line-height: 35px;
+}
+
+.content button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #DFD3EE;
+  color: #000;
+  padding-bottom: 10px;
+  border: none;
+  gap: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 2s;
+}
+
+.content img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Categories Design, Weekend Gateways */
+.travel_creators,
+.categories {
+  margin: 50px 0 50px 0;
+}
+
+.categories_header h2 {
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.categories_header p {
+  line-height: 40px;
+  padding-bottom: 15px;
+}
+
+.categories_image {
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.categories_section {
+  position: relative;
+  color: #fff;
+  flex-basis: 20%;
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.categories_section img {
+  width: 282px;
+  height: 282px;
+  filter: blur(1.75);
+  border-radius: 10px;
+}
+
+.categories_head {
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  right: 0px;
+}
+
+.categories_head h2 {
+  background-color: rgba(0, 0, 0, 0.365);
+  padding: 20px;
+  max-width: 1500px;
+}
+
+/* Travel Creators */
+.travelcreators_image_section {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.travelimage,
+.exploreimage {
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.image__info {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.image__info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.image__info p {
+  font-weight: 500;
+}
+
+.image__info a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+/* Near Places */
+.near_places_images {
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+ 
+}
+
+.near_place {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.near_place img {
+  border-radius: 15px;
+  width: 280px;
+  height: 280px;
+}
+
+.near_place h2 {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0px;
+}
+
+.near_place p {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.near_place_heart {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.near_place button {
+  background-color: #fff;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  width: 40px;
+  margin-left: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.near_place button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Explore Places */
+.explore_image_section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+}
+
+.explore_places {
+  background-color: #F2F1EC;
+  width: 100vw;
+  position: relative;
+  left: calc(-150px);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 150px 50px 150px;
+  width: 100%;
+  height: 380px;
+}
+
+.explore_places_header h2 {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.explore_image_one,
+.explore_image_two,
+.explore_image_three {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.explore_place_heart {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+.explore_place_heart button {
+  background-color: #fff;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  width: 40px;
+  margin-left: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.explore_place_heart button:hover {
+  background-color: red;
+  color: white;
+}
+.explore_places_2{
+  display:none;
+}
+
+/* Wanderer Design */
+.wanderer {
+  margin: 50px 0px;
+  display: flex;
+  padding: 25px;
+  background-color: #F2ECF9;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wanderer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  text-align: center;
+  line-height: 40px;
+
+}
+
+.wanderer_content_text img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.wanderer_content h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.wanderer_content button {
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+/* Travellers Choice */
+.travellers_choice {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: #FFF7E1;
+  width: 100vw;
+  position: relative;
+  left: calc(-150px);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0px 150px 0px 150px;
+  width: 100%;
+
+}
+.travellers_choice_image img{
+  width:100%;
+  height:600px;
+}
+.travellers_choice_content{
+  padding-top:70px;
+  margin-left: 30px;
+}
+.travellers_choice_content h2{
+  font-size: 50px;
+  letter-spacing: -3px;
+  line-height: 60px;
+}
+.travellers_choice_content p{
+  font-size: 24px;
+}
+.travellers_choice_content button{
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+/* Footer Section */
+.footer{
+  margin-top:50px;
+  background-color:#F2F2F2;
+  width: 100vw;
+  position: relative;
+  left: calc(-150px);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 30px 150px 30px 150px;
+  width: 100%;
+
+}
+.footer_sec_one{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer_sec_one a{
+  text-decoration: none;
+  color: #000;
+}
+.footer_sec_one li{
+  font-size: 14px;
+  font-weight: 300;
+  list-style-type: none;
+}
+.footer_sec_one h4{
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer_four h4, p{
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Footer section -2  */
+.footer_sec_two_1{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top: 20px;
+  flex-basis: 75%;
+}
+.footer_sec_two img{
+  width:50px;
+}
+.info{ flex-grow: 2;}
+.info a{
+  padding:5px;
+  font-weight: 700;
+  color: #000;
+  font-size: 14px;
+}
+.info2{
+  flex-grow: 1;
+}
+.selectinfo, .selectinfo2{
+  padding:5px 20px 0px 50px;
+  margin: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+}
+/* social media */
+.footer_sec_three{
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.footer_sec3_info p{
+  font-size: 11px;
+  padding-right: 330px;
+}
+.footer_sec_three_social{
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  font-size: larger;
+  gap: 10px;
+}
+/* Media Queiries */
+@media screen and (min-width:800px) and (max-width: 1024px) {
+  html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 12px !important;
+  }
+  .header_sec1{
+    width:70%;
+    margin-left:50px;
+  }
+  .header_sec2,.header_sec3, .header_middle{
+    display: none;
+  }
+  
+  .search_info{
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .categories_section{
+    flex-basis:75%; 
+  }
+  .categories_head h2{
+    max-width: 240px;
+  }
+  .categories_image, .near_places_images{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  .footer_sec_three{
+    padding:20px;
+    font-size:30px
+  }
+  .footer_sec3_info p{
+    display:none;
+  }
+  .travelcreators_image_section, .explore_image_section{
+    display:inline-block;
+    padding-left:100px;
+  }
+  .explore_places{
+    display:none;
+  }
+  .explore_places_2{
+    display:inline-block;
+  }
+  .tripbuilder_section img{
+    width:250%;
+  }
+  .wanderer{
+    display: block;
+  }
+  .wanderer_content button{
+    width:100%;
+  }
+  .search__form{
+    margin-left:100px;
+  }
+}
+@media (max-width: 800px){
+  html{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 50px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0 10px;
+    font-size: 16px !important;
+    overflow-x: hidden;
+}
+.explore_places_2{
+  display: inline-block;
+}
+.search-info {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  padding:20px;
+  margin:0px;
+}
+.header_sec1{
+  width:70%;
+  margin-left:30px;
+}
+.searchinfo__p{
+  text-decoration:none;
+  display: flex;
+  flex-wrap:wrap;
+}
+.search__form{
+  width:70%;
+  margin:20px;
+  padding-left:130px;
+}
+.tripbuilder_section img{
+  width:250%;
+}
+
+.header_sec2,.header_sec3, .header_middle, .explore_places, .search{
+  display: none;
+}
+.categories_section{
+  flex-basis:75%; 
+}
+.categories_head h2{
+  max-width: 240px;
+}
+.categories_image, .near_places_images{
+  grid-template-columns:repeat(2,1fr)
+}
+.travelcreators_image_section, .explore_image_section{
+  display:inline-block;
+  padding-left:100px;
+}
+.near_places{
+display:flex;
+flex-wrap:wrap;
+flex-grow:2;
+flex-basis:25%;
+}
+.wanderer{
+  display:block;
+}
+.wanderer_content button{
+  width:100%;
+}
+.footer_sec_one{
+  padding-left:20px;
+}
+}
